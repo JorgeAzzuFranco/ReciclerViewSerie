@@ -9,12 +9,14 @@ public class Serie {
     private String caps;
     private int img;
     private String desc;
+    private boolean seriefav;
 
     public Serie(String name, String caps, int img, String desc) {
         this.name = name;
         this.caps = caps;
         this.img = img;
         this.desc = desc;
+        seriefav = seriefav;
     }
 
     public String getName() {
@@ -47,5 +49,13 @@ public class Serie {
 
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+
+    public void set(boolean seriefav){
+        this.seriefav = seriefav;
+    }
+
+    public boolean yesorno(){
+        return seriefav;
     }
 }
