@@ -76,10 +76,12 @@ public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.SeriesView
         });
     }
 
-
     @Override
     public int getItemCount() {
-        return series.size();
+        if (series.size() != 0){
+            return series.size();
+        }
+        return 0;
     }
 
     public boolean series(int position){

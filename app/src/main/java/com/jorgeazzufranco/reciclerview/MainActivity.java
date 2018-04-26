@@ -37,17 +37,18 @@ public class MainActivity extends AppCompatActivity {
         rv.setLayoutManager(lManager);
 
         prepareSeries();
+        adapter = new SeriesAdapter(series, this);
         rv.setAdapter(adapter);
     }
 
     public void boton1_list(View v){
-        //adapter.setFalse();
+        adapter.setFalse();
         adapter = new SeriesAdapter(series, v.getContext());
         rv.setAdapter(adapter);
     }
 
     public void boton2_bookmark(View v){
-        //adapter.setTrue();
+        adapter.setTrue();
         adapter = new SeriesAdapter(bm,v.getContext());
         rv.setAdapter(adapter);
     }
