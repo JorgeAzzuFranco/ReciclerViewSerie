@@ -16,7 +16,7 @@ public class Serie {
         this.caps = caps;
         this.img = img;
         this.desc = desc;
-        seriefav = seriefav;
+        seriefav = false;
     }
 
     public String getName() {
